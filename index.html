@@ -3,76 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foramina Labs LLC | Digital Simplicity</title>
+    <title>Foramina Labs LLC | Enterprise Mobile Architectures</title>
+    
+    <!-- Tailwind CSS for clean, premium typography and layout -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine.js for lightweight, smooth modal animations -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- AOS (Animate on Scroll) for industry-leading entrance animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <style>
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: radial-gradient(circle at 90% 10%, rgba(243, 244, 246, 1) 0%, rgba(255, 255, 255, 1) 60%);
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 tracking-tight antialiased">
+<body class="gradient-bg text-gray-900 tracking-tight antialiased min-h-screen" x-data="{ openTerms: false, openPrivacy: false }">
 
-    <header class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="text-xl font-bold tracking-wide text-gray-900">
+    <!-- Header / Navigation -->
+    <header class="max-w-6xl mx-auto px-6 sm:px-12 py-8 flex justify-between items-center bg-transparent">
+        <div class="text-lg font-bold tracking-widest text-gray-900 uppercase">
             FORAMINA LABS
         </div>
-        <a href="#contact" class="text-sm font-medium border-b border-gray-900 pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors">
-            Get in touch
+        <a href="#contact" class="text-xs font-semibold tracking-wider uppercase border-b border-gray-900 pb-1 hover:text-gray-500 hover:border-gray-500 transition-colors duration-300">
+            Initiate Consultation
         </a>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 pt-20 pb-32">
+    <!-- Hero Section (The "Sigh of Relief") -->
+    <main class="max-w-6xl mx-auto px-6 sm:px-12 pt-24 pb-32">
         <div class="max-w-3xl">
-            <span class="text-xs font-semibold tracking-widest uppercase text-gray-400 block mb-4">
-                Built for Builders
+            <span class="text-xs font-semibold tracking-widest uppercase text-gray-400 block mb-6" data-aos="fade-down" data-aos-duration="1000">
+                Digital Architecture • Built For Scale
             </span>
             
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-gray-900 leading-[1.1] mb-8">
-                We handle the complexity.<br>
-                You build your business.
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight text-gray-900 leading-[1.1] mb-8" data-aos="fade-up" data-aos-duration="1200">
+                We eliminate the technical friction.<br>
+                <span class="font-normal text-gray-500">You lead your market.</span>
             </h1>
             
-            <p class="text-lg sm:text-xl text-gray-600 font-light leading-relaxed mb-12 max-w-2xl">
-                As an entrepreneur, your time shouldn't be consumed by technical friction. Foramina Labs builds clean, reliable, and high-performance mobile architectures so you can breathe easy and focus on growth.
+            <p class="text-lg sm:text-xl text-gray-600 font-light leading-relaxed mb-12 max-w-2xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+                As an entrepreneur, complexity is your greatest tax. Foramina Labs engineered a clean break from tradition, deploying high-performance, minimalist mobile infrastructure designed specifically to give serious operators breathing room to scale.
             </p>
             
-            <div>
-                <a href="#contact" class="inline-block bg-gray-900 text-white text-sm font-medium px-8 py-4 rounded-md shadow-sm hover:bg-gray-800 transition-all">
-                    Let's talk project details
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+                <a href="mailto:foraminalabs@outlook.com?subject=Strategic%20Inquiry%20--%20Foramina%20Labs" class="inline-block bg-gray-900 text-white text-xs font-semibold tracking-wider uppercase px-8 py-4 rounded-none shadow-sm hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Secure Project Briefing
                 </a>
             </div>
         </div>
     </main>
 
-    <hr class="border-gray-200 max-w-5xl mx-auto px-6">
-
-    <section id="contact" class="max-w-5xl mx-auto px-6 py-24">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-2xl font-medium text-gray-900 mb-4">
-                    Have an idea?
+    <!-- Information Page Section (Informative Framework for Serious Buyers) -->
+    <section id="framework" class="bg-white border-t border-b border-gray-100 py-24">
+        <div class="max-w-6xl mx-auto px-6 sm:px-12">
+            <div class="mb-16">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-2" data-aos="fade-right">
+                    Operational Intelligence
                 </h2>
-                <p class="text-gray-600 font-light max-w-sm">
-                    Reach out directly to discuss your applications, infrastructure needs, or deployment strategies. We look forward to connecting.
+                <p class="text-3xl font-light text-gray-900" data-aos="fade-right" data-aos-delay="100">
+                    The Architecture of Certainty
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16">
+                <!-- Pillar 1 -->
+                <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-xs font-mono text-gray-300">01 / CAPTURE</div>
+                    <h3 class="text-lg font-medium text-gray-900">Reduced Structural Drag</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">
+                        We swap fragile dependencies for direct, high-performance architectures. Your technical debt drops to zero, yielding immediate compounding operational clarity.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-xs font-mono text-gray-300">02 / PROTOCOL</div>
+                    <h3 class="text-lg font-medium text-gray-900">Enterprise Alignment</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">
+                        Every system is structured around custom deployment strategies. Engineered explicitly for serious buyers looking to scale platforms without expanding internal engineering overhead.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="space-y-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-xs font-mono text-gray-300">03 / HANDOFF</div>
+                    <h3 class="text-lg font-medium text-gray-900">Transparent Ecosystems</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">
+                        Absolute control is retained natively within your legal business entities. No restrictive multi-year lock-ins, vendor dependencies, or hidden infrastructure vulnerabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 sm:px-12 py-24" data-aos="fade-up">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-gray-200 pt-16">
+            <div>
+                <h2 class="text-2xl font-light text-gray-900 mb-4">
+                    Initiate Strategic Dialogue
+                </h2>
+                <p class="text-gray-500 font-light text-sm max-w-sm leading-relaxed">
+                    Serious partnerships require immediate, direct lines of communication. Click the link below to automatically draft an structured inquiry directly to our corporate desk.
                 </p>
             </div>
             
-            <div class="space-y-6">
+            <div class="flex flex-col justify-center space-y-6">
                 <div>
-                    <h3 class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-1">
-                        General Inquiries
+                    <h3 class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-2">
+                        Direct Corporate Communications
                     </h3>
-                    <a href="mailto:hello@foraminalabs.com" class="text-lg font-light text-gray-900 hover:text-gray-600 transition-colors">
-                        hello@foraminalabs.com
+                    <!-- Mailto link configured to auto-open default client -->
+                    <a href="mailto:foraminalabs@outlook.com?subject=Strategic%20Inquiry%20--%20Foramina%20Labs" class="text-xl sm:text-2xl font-light text-gray-900 hover:text-gray-500 transition-colors duration-300 border-b border-transparent hover:border-gray-500 pb-1">
+                        foraminalabs@outlook.com
                     </a>
                 </div>
                 
                 <div>
                     <h3 class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-1">
-                        Location
+                        Corporate Jurisdiction
                     </h3>
-                    <p class="text-lg font-light text-gray-900">
+                    <p class="text-sm font-light text-gray-600">
                         Georgia, USA
                     </p>
                 </div>
@@ -80,11 +139,71 @@
         </div>
     </section>
 
-    <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-gray-100 text-xs text-gray-400 flex justify-between items-center">
+    <!-- Footer & Legal triggers -->
+    <footer class="max-w-6xl mx-auto px-6 sm:px-12 py-12 border-t border-gray-100 text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>
             © 2026 Foramina Labs LLC. All rights reserved.
         </div>
+        <div class="flex space-x-6">
+            <button @click="openTerms = true" class="hover:text-gray-900 transition-colors duration-300 cursor-pointer">Terms of Use</button>
+            <button @click="openPrivacy = true" class="hover:text-gray-900 transition-colors duration-300 cursor-pointer">Privacy Policy</button>
+        </div>
     </footer>
 
+    <!-- MODAL: TERMS OF USE -->
+    <div x-show="openTerms" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/20 backdrop-blur-sm" x-transition.opacity>
+        <div @click.away="openTerms = false" class="bg-white max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 sm:p-12 shadow-xl border border-gray-100">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg font-semibold uppercase tracking-wider text-gray-900">Terms of Use</h3>
+                <button @click="openTerms = false" class="text-gray-400 hover:text-gray-900 text-xl font-light">&times;</button>
+            </div>
+            <div class="text-xs text-gray-600 space-y-4 font-light leading-relaxed">
+                <p class="font-semibold text-gray-900">Effective Date: June 17, 2026</p>
+                <p>Welcome to the corporate portal of Foramina Labs LLC ("Company", "we", "us", or "our"). By accessing or utilizing this website, you agree to be bound by these standard Terms of Use in full compliance with state and federal corporate governance.</p>
+                
+                <p class="border-l-2 border-gray-900 pl-3 font-medium text-gray-900 my-4 bg-gray-50 py-2">
+                    <strong>CRITICAL REGULATORY NOTICE & NO-BROKER DISCLAIMER:</strong> Foramina Labs LLC functions strictly as an independent software, technological asset, and systems architecture consultancy. <strong>The Company is not a broker, registered investment advisor, or licensed financial broker-dealer.</strong> No material, strategy, or infrastructure concept presented via this platform, or during any consultative engagement, constitutes a solicitation, recommendation, or offer to execute financial brokerage actions.
+                </p>
+
+                <p class="border-l-2 border-gray-900 pl-3 font-medium text-gray-900 my-4 bg-gray-50 py-2">
+                    <strong>EARNINGS & SUCCESS WARRANTY DISCLAIMER:</strong> Enterprise building involves systemic operational volatility. Foramina Labs LLC develops premium architectural assets and provides advisory guidance; however, <strong>there is absolutely no guarantee of commercial success, operational viability, revenue growth, or specific financial conversion.</strong> All business strategies and application builds deploy entirely at the client's own risk.
+                </p>
+
+                <p><strong>Intellectual Property:</strong> All original layouts, structural assets, text, and graphics compiled within this digital interface are protected under exclusive trademark and copyright laws owned implicitly by Foramina Labs LLC.</p>
+                <p><strong>Limitation of Liability:</strong> In no physical or legal event shall Foramina Labs LLC, its executives, or representatives be held liable for direct, indirect, incidental, or consequential commercial damages resulting from system implementation or reliance on materials hosted herein.</p>
+            </div>
+            <div class="mt-8 text-right">
+                <button @click="openTerms = false" class="bg-gray-900 text-white text-xs tracking-widest uppercase px-6 py-3 font-semibold hover:bg-gray-800 transition-colors">Acknowledge</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: PRIVACY POLICY -->
+    <div x-show="openPrivacy" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/20 backdrop-blur-sm" x-transition.opacity>
+        <div @click.away="openPrivacy = false" class="bg-white max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 sm:p-12 shadow-xl border border-gray-100">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg font-semibold uppercase tracking-wider text-gray-900">Privacy Policy</h3>
+                <button @click="openPrivacy = false" class="text-gray-400 hover:text-gray-900 text-xl font-light">&times;</button>
+            </div>
+            <div class="text-xs text-gray-600 space-y-4 font-light leading-relaxed">
+                <p class="font-semibold text-gray-900">Effective Date: June 17, 2026</p>
+                <p>Foramina Labs LLC respects user data anonymity and prioritizes clean digital tracking compliance.</p>
+                <p><strong>Information Collection:</strong> This website collects no active user authentication records, tracking cookies, or continuous diagnostic metrics. Data transmittal occurs solely when an enterprise operator explicitly clicks a communication terminal link to send an email inquiry directly via their own designated electronic client.</p>
+                <p><strong>Data Minimization Protocols:</strong> Any corporate or personal contact criteria exchanged via transactional email channels is handled with industrial discretion. We strictly do not sell, distribute, or leverage corporate communications pipelines for external marketing monetization.</p>
+                <p><strong>Cloud Security Architecture:</strong> Our front-end digital framework is anchored globally on Cloudflare’s proxy servers, maintaining state-of-the-art protection parameters against standard edge server disruptions and distributed attacks.</p>
+            </div>
+            <div class="mt-8 text-right">
+                <button @click="openPrivacy = false" class="bg-gray-900 text-white text-xs tracking-widest uppercase px-6 py-3 font-semibold hover:bg-gray-800 transition-colors">Acknowledge</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize AOS Animation Engine -->
+    <script>
+        AOS.init({
+            once: true, // Animations happen once while scrolling down to keep layout elegant
+            mirror: false
+        });
+    </script>
 </body>
 </html>
